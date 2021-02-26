@@ -56,7 +56,7 @@ jobs:
 
   mpc-hc_sync_with_upstream:
     runs-on: ubuntu-latest
-    name: Sync qbittorrent with upstream latest
+    name: Sync mpc-hc with upstream latest
 
     steps:
 
