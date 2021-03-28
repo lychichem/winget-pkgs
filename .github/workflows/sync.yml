@@ -5,6 +5,7 @@ on:
 
   workflow_dispatch:  # click the button on Github repo!
 
+name: sync tracking branches
 
 jobs:
   sync_with_upstream:
