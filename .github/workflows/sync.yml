@@ -15,7 +15,7 @@ jobs:
     steps:
     # Step 1: run a standard checkout action, provided by github
     - name: Checkout zotero
-      uses: actions/checkout@latest
+      uses: actions/checkout@v2.3.4
       with:
         ref: zotero
         # submodules: 'recursive'     ### may be needed in your situation
@@ -23,7 +23,7 @@ jobs:
     # Step 2: run this sync action - specify the upstream repo, upstream branch to sync with, and target sync branch
     - name: Pull (Fast-Forward) upstream changes
       id: sync_zotero
-      uses: aormsby/Fork-Sync-With-Upstream-action@latest
+      uses: aormsby/Fork-Sync-With-Upstream-action@v2.3
       with:
         upstream_repository: microsoft/winget-pkgs
         upstream_branch: master
@@ -39,7 +39,7 @@ jobs:
 
      # Step 1: run a standard checkout action, provided by github
     - name: Checkout qbittorrent
-      uses: actions/checkout@latest
+      uses: actions/checkout@v2.3.4
       with:
         ref: qbittorrent
         # submodules: 'recursive'     ### may be needed in your situation
@@ -47,7 +47,7 @@ jobs:
     # Step 2: run this sync action - specify the upstream repo, upstream branch to sync with, and target sync branch
     - name: Pull (Fast-Forward) upstream changes
       id: sync_qbittorrent
-      uses: aormsby/Fork-Sync-With-Upstream-action@latest
+      uses: aormsby/Fork-Sync-With-Upstream-action@v2.3
       with:
         upstream_repository: microsoft/winget-pkgs
         upstream_branch: master
@@ -63,7 +63,7 @@ jobs:
 
      # Step 1: run a standard checkout action, provided by github
     - name: Checkout mpc-hc
-      uses: actions/checkout@latest
+      uses: actions/checkout@v2.3.4
       with:
         ref: mpc-hc
         # submodules: 'recursive'     ### may be needed in your situation
@@ -71,7 +71,7 @@ jobs:
     # Step 2: run this sync action - specify the upstream repo, upstream branch to sync with, and target sync branch
     - name: Pull (Fast-Forward) upstream changes
       id: sync_mpc-hc
-      uses: aormsby/Fork-Sync-With-Upstream-action@latest
+      uses: aormsby/Fork-Sync-With-Upstream-action@v2.3
       with:
         upstream_repository: microsoft/winget-pkgs
         upstream_branch: master
@@ -87,7 +87,7 @@ jobs:
 
      # Step 1: run a standard checkout action, provided by github
     - name: Checkout alibaba.dingtalk
-      uses: actions/checkout@latest
+      uses: actions/checkout@v2.3.4
       with:
         ref: alibaba.dingtalk
         # submodules: 'recursive'     ### may be needed in your situation
@@ -95,7 +95,7 @@ jobs:
     # Step 2: run this sync action - specify the upstream repo, upstream branch to sync with, and target sync branch
     - name: Pull (Fast-Forward) upstream changes
       id: sync_dingtalk
-      uses: aormsby/Fork-Sync-With-Upstream-action@latest
+      uses: aormsby/Fork-Sync-With-Upstream-action@v2.3
       with:
         upstream_repository: microsoft/winget-pkgs
         upstream_branch: master
