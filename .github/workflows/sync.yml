@@ -14,7 +14,7 @@ jobs:
 
     steps:
     # Step 1: run a standard checkout action, provided by github
-    - name: Checkout zotero
+    - name: Checkout zotero.zotero
       uses: actions/checkout@v2.3.4
       with:
         ref: zotero.zotero
@@ -38,7 +38,7 @@ jobs:
     steps:
 
      # Step 1: run a standard checkout action, provided by github
-    - name: Checkout qbittorrent
+    - name: Checkout qbittorrent.qbittorrent
       uses: actions/checkout@v2.3.4
       with:
         ref: qbittorrent.qbittorrent
