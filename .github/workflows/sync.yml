@@ -57,7 +57,7 @@ jobs:
 
   mpc-hc_sync_with_upstream:
     runs-on: ubuntu-latest
-    name: Sync mpc-hc with upstream latest
+    name: Sync clsid2.mpc-hc with upstream latest
 
     steps:
 
