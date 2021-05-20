@@ -8,16 +8,16 @@ on:
 name: sync tracking branches
 
 jobs:
-  zotero_sync_with_upstream:
+  zotero.zotero_sync_with_upstream:
     runs-on: ubuntu-latest
-    name: Sync zotero with upstream latest
+    name: Sync zotero.zotero with upstream latest
 
     steps:
     # Step 1: run a standard checkout action, provided by github
     - name: Checkout zotero
       uses: actions/checkout@v2.3.4
       with:
-        ref: zotero
+        ref: zotero.zotero
         # submodules: 'recursive'     ### may be needed in your situation
 
     # Step 2: run this sync action - specify the upstream repo, upstream branch to sync with, and target sync branch
@@ -27,13 +27,13 @@ jobs:
       with:
         upstream_repository: microsoft/winget-pkgs
         upstream_branch: master
-        target_branch: zotero
+        target_branch: zotero.zotero
         git_pull_args: --ff-only                    # optional arg use, defaults to simple 'pull'
         github_token: ${{ secrets.GITHUB_TOKEN }}   # optional, for accessing repos that require authentication
 
-  qbittorrent_sync_with_upstream:
+  qbittorrent.qbittorrent_sync_with_upstream:
     runs-on: ubuntu-latest
-    name: Sync qbittorrent with upstream latest
+    name: Sync qbittorrent.qbittorrent with upstream latest
 
     steps:
 
@@ -41,7 +41,7 @@ jobs:
     - name: Checkout qbittorrent
       uses: actions/checkout@v2.3.4
       with:
-        ref: qbittorrent
+        ref: qbittorrent.qbittorrent
         # submodules: 'recursive'     ### may be needed in your situation
 
     # Step 2: run this sync action - specify the upstream repo, upstream branch to sync with, and target sync branch
@@ -51,21 +51,21 @@ jobs:
       with:
         upstream_repository: microsoft/winget-pkgs
         upstream_branch: master
-        target_branch: qbittorrent
+        target_branch: qbittorrent.qbittorrent
         git_pull_args: --ff-only                    # optional arg use, defaults to simple 'pull'
         github_token: ${{ secrets.GITHUB_TOKEN }}   # optional, for accessing repos that require authentication
 
-  mpc-hc_sync_with_upstream:
+  clsid2.mpc-hc_sync_with_upstream:
     runs-on: ubuntu-latest
     name: Sync mpc-hc with upstream latest
 
     steps:
 
      # Step 1: run a standard checkout action, provided by github
-    - name: Checkout mpc-hc
+    - name: Checkout clsid2.mpc-hc
       uses: actions/checkout@v2.3.4
       with:
-        ref: mpc-hc
+        ref: clsid2.mpc-hc
         # submodules: 'recursive'     ### may be needed in your situation
 
     # Step 2: run this sync action - specify the upstream repo, upstream branch to sync with, and target sync branch
@@ -75,7 +75,7 @@ jobs:
       with:
         upstream_repository: microsoft/winget-pkgs
         upstream_branch: master
-        target_branch: mpc-hc
+        target_branch: clsid2.mpc-hc
         git_pull_args: --ff-only                    # optional arg use, defaults to simple 'pull'
         github_token: ${{ secrets.GITHUB_TOKEN }}   # optional, for accessing repos that require authentication
 
