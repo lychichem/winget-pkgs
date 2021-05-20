@@ -8,7 +8,7 @@ on:
 name: sync tracking branches
 
 jobs:
-  zotero.zotero_sync_with_upstream:
+  zotero_sync_with_upstream:
     runs-on: ubuntu-latest
     name: Sync zotero.zotero with upstream latest
 
@@ -31,7 +31,7 @@ jobs:
         git_pull_args: --ff-only                    # optional arg use, defaults to simple 'pull'
         github_token: ${{ secrets.GITHUB_TOKEN }}   # optional, for accessing repos that require authentication
 
-  qbittorrent.qbittorrent_sync_with_upstream:
+  qbittorrent_sync_with_upstream:
     runs-on: ubuntu-latest
     name: Sync qbittorrent.qbittorrent with upstream latest
 
@@ -55,7 +55,7 @@ jobs:
         git_pull_args: --ff-only                    # optional arg use, defaults to simple 'pull'
         github_token: ${{ secrets.GITHUB_TOKEN }}   # optional, for accessing repos that require authentication
 
-  clsid2.mpc-hc_sync_with_upstream:
+  mpc-hc_sync_with_upstream:
     runs-on: ubuntu-latest
     name: Sync mpc-hc with upstream latest
 
