@@ -1,8 +1,8 @@
-# Created with WinGet Releaser using komac v2.12.0
+# Automatically updated by the winget bot at 2025/Jul/14
 # yaml-language-server: $schema=https://aka.ms/winget-manifest.version.1.10.0.schema.json
 
-PackageIdentifier: igoogolx.lux
-PackageVersion: 1.33.2
+PackageIdentifier: WavesAudio.WavesCentral
+PackageVersion: 16.0.7.209070
 DefaultLocale: en-US
 ManifestType: version
 ManifestVersion: 1.10.0

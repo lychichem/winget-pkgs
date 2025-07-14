@@ -1,8 +1,8 @@
-# Created with WinGet Releaser using komac v2.12.0
+# Created with WinGet Releaser using komac v2.12.1
 # yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.10.0.schema.json
 
 PackageIdentifier: igoogolx.lux
-PackageVersion: 1.33.2
+PackageVersion: 1.35.2
 PackageLocale: en-US
 Publisher: igoogolx
 PublisherUrl: https://github.com/igoogolx
@@ -23,16 +23,15 @@ Tags:
 - windows
 ReleaseNotes: |-
   What's Changed
-  New changes
-  - feat: update UI of nav
   Bug fixes 🐛
-  - fix: timeout for init core
-  Other changes
-  - chore: update dependencies
+  - fix: fail to read clipboard for importing proxy
+  - fix: nav icon is not clickable
+  Other Changes
+  - chore: mark Fake Ip as normal feature
   🛡 VirusTotal GitHub Action analysis:
-  - lux-1.33.2-amd64-macos.dmg
-  - lux-1.33.2-arm64-macos.dmg
-  - lux-1.33.2-x64-windows.exe
-ReleaseNotesUrl: https://github.com/igoogolx/lux/releases/tag/v1.33.2
+  - lux-1.35.2-amd64-macos.dmg
+  - lux-1.35.2-arm64-macos.dmg
+  - lux-1.35.2-x64-windows.exe
+ReleaseNotesUrl: https://github.com/igoogolx/lux/releases/tag/v1.35.2
 ManifestType: defaultLocale
 ManifestVersion: 1.10.0
